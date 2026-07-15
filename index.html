@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Noctis Archive</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<header>
+    <h1>NOCTIS ARCHIVE</h1>
+        <p class="subtitle">"Even across distance, the mind remembers."</p>
+        </header>
+
+        <nav>
+            <button onclick="showSection('interests')">🧠</button>
+                <button onclick="showSection('hobbies')">📚</button>
+                    <button onclick="showSection('facts')">🔍</button>
+                        <button onclick="showSection('puzzles')">🧩</button>
+                            <button onclick="showSection('journal')">🕯️</button>
+                                <button onclick="unlock()">🔐</button>
+                                </nav>
+
+                                <main>
+
+                                <section id="interests" class="active">
+                                <h2>Current Obsessions</h2>
+                                <ul contenteditable="true">
+                                <li>How people change over time</li>
+                                <li>Distance and memory</li>
+                                <li>What stays and what fades</li>
+                                </ul>
+                                </section>
+
+                                <section id="hobbies">
+                                <h2>New Hobbies</h2>
+                                <ul contenteditable="true">
+                                <li>Learning languages</li>
+                                <li>Studying medicine</li>
+                                <li>Reading minds (or trying to)</li>
+                                </ul>
+                                </section>
+
+                                <section id="facts">
+                                <h2>Psychological Truths</h2>
+                                <ul contenteditable="true">
+                                <li>We rewrite memories without realizing</li>
+                                <li>The brain fills gaps with fiction</li>
+                                <li>Absence strengthens emotional imprint</li>
+                                </ul>
+                                </section>
+
+                                <section id="journal">
+                                <h2>Things We Don't Say Out Loud</h2>
+                                <textarea placeholder="Write something only we would understand..."></textarea>
+                                </section>
+
+                                <section id="puzzles">
+
+                                <h2>Puzzle Vault</h2>
+
+                                <div class="puzzle">
+                                <p>Unscramble:</p>
+                                <p class="scramble">M E M O R Y</p>
+                                <input id="p1">
+                                <button onclick="checkP1()">Submit</button>
+                                <p id="r1"></p>
+                                </div>
+
+                                <div class="puzzle">
+                                <p>Binary Code:</p>
+                                <p>01001000 01100101 01101100 01101100 01101111</p>
+                                <input id="p2">
+                                <button onclick="checkP2()">Submit</button>
+                                <p id="r2"></p>
+                                </div>
+
+                                <div class="puzzle">
+                                <p class="hidden">Y o u a r e s t i l l h e r e</p>
+                                <p>(Remove every second letter)</p>
+                                </div>
+
+                                </section>
+
+                                <section id="secret">
+                                <h2>Secret Archive</h2>
+                                <p>This was never meant for anyone else.</p>
+                                <p>Add your memories here...</p>
+                                </section>
+
+                                </main>
+
+                                <script src="script.js"></script>
+                                </body>
+                                </html>
